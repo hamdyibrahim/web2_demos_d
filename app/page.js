@@ -8,7 +8,13 @@ export default function Page() {
       <p>
         Sum of {a} and {b} is {a + b}
       </p>
-      <Link href="week-2">Week 2</Link>
+      <Link href="week-2" className="text-xl font-bold">
+        Week 2
+      </Link>
+      <br />
+      <Link href="week-3" className="text-xl font-bold">
+        Week 3
+      </Link>
     </main>
   );
 }
