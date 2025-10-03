@@ -23,6 +23,19 @@ export default function Counter() {
       >
         Increment
       </button>
+
+      <button
+        onClick={increment}
+        className={`font-bold ml-3
+             active:bg-red-500 rounded text-white p-2
+             ${
+               count === 10
+                 ? "bg-gray-300 cursor-not-allowed"
+                 : "bg-blue-400 hover:bg-blue-600"
+             }`}
+      >
+        Increment
+      </button>
     </div>
   );
 }
