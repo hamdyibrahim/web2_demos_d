@@ -54,9 +54,9 @@ export default function Page() {
           </li>
         ))}
       </ul>
-      <p className="font-bold text-green-900">
+      {selectedDogId && <p className="font-bold text-green-900">
         You selected dog number {selectedDogId}
-      </p>
+      </p>}
     </main>
   );
 }
