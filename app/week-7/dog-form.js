@@ -14,7 +14,8 @@ export default function DogForm({ onAddDog }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Dog Submitted: ", dog);
-    onAddDog(dog);
+    const id = Math.floor(Math.random() * 10000);
+    onAddDog({ ...dog, id });
     setDog({ id: null, name: "", age: 0 });
   };
 
